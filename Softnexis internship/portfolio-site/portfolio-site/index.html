@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">TaskFlow Portfolio</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hello, I'm Sumit 👋</h1>
+  <p>A Computer Science Fresher building modern web applications.</p>
+  <a href="contact.html" class="btn">Hire Me</a>
+</section>
+
+<section class="projects">
+  <div class="card">
+    <h2>Portfolio Website</h2>
+    <p>Responsive portfolio built using HTML & CSS.</p>
+  </div>
+
+  <div class="card">
+    <h2>TaskFlow App</h2>
+    <p>Full-stack task manager project coming soon.</p>
+  </div>
+
+  <div class="card">
+    <h2>Internship Task</h2>
+    <p>Soft Nexis Task 1 completed successfully.</p>
+  </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
+</body>
+</html>
